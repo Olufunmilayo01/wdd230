@@ -1,0 +1,57 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 20px;
+  background-color: #ffff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Text", serif;
+  color: #1b4965;
+}
+h1 {
+  text-align: center;
+}
+
+p {
+  color: #2c3e50;
+}
+
+.accent {
+  color: #dbb42c;
+}
+
+table.colors {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table.colors th,
+table.colors td {
+  border: 1px solid #1b4965;
+  padding: 10px;
+  text-align: center;
+}
+
+table.colors .primary {
+  background-color: #789fb7;
+  color: #ffff;
+}
+
+table.colors .secondary {
+  background-color: #dbb42c;
+  color: #ffff;
+}
+
+table.colors .accent1 {
+  background-color: #1b4965;
+  color: #ffff;
+}
+
+table.colors .accent2 {
+  background-color: #ffff;
+  color: #2c3e50;
+}
