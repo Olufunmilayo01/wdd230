@@ -1,5 +1,3 @@
-
-
 header {
   background-color: darkcyan;
   display: flex;
@@ -98,7 +96,7 @@ section ul li {
 
 section ul li a {
   text-decoration: none;
-  color: darkcyan;
+  color: black;
 }
 
 /* section ul li a:hover {
