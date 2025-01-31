@@ -18,6 +18,28 @@ header span {
   font-weight: 700;
 }
 
+#darkModeButton {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: white;
+}
+
+#darkModeButton:hover {
+  background-color: #444;
+}
+
 nav {
   background-color: rgb(70, 71, 72);
   text-align: center;
@@ -27,11 +49,23 @@ nav {
   justify-content: center;
 }
 
+#myButton {
+  font-size: 2rem;
+  background-color: rgb(70, 71, 72);
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  padding: 0 2vw;
+  display: none;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 nav a {
@@ -99,6 +133,7 @@ section ul li a {
   color: black;
 }
 
+
 /* section ul li a:hover {
   text-decoration: underline;
 } */
@@ -117,4 +152,42 @@ footer p {
 
 footer span {
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* .box {
+    width: 80%;
+  } */
+  nav ul {
+    flex-direction: column;
+    text-align: left;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .menuLinks {
+    display: none; /* Hide menu initially */
+  }
+
+  .menuLinks a {
+    display: block;
+  }
+
+  #myButton {
+    display: block; /* Show hamburger in mobile view */
+    cursor: pointer;
+  }
+
+  .menuLinks.open {
+    display: flex; /* Show menu when open */
+  }
+
+  .right-buttons {
+    display: flex;
+  }
 }

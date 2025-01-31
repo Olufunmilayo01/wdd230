@@ -29,13 +29,14 @@
       rel="preconnect"
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
     />
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
     <header>
+      <button id="darkModeButton">🌙</button>
       <img
         src="images/Oluwatobi.jpeg"
         alt="Oluwatobiloba Makinde Profile"
@@ -45,8 +46,9 @@
       <span>Oluwatobiloba Makinde</span>
     </header>
     <nav>
-      <ul>
-        <li><a href="#" title="Home" class="active"></a></li>
+      <button id="myButton">&#9776;</button>
+      <ul class="menuLinks">
+        <li><a href="#" title="Home" class="active">Home</a></li>
         <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
         <li><a href="#">Site Plan</a></li>
         <li><a href="#">Form</a></li>
