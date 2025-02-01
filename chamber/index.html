@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lagos Chamber of Commerce</title>
+    <meta name="author" content="Oluwatobiloba Makinde" />
+    <meta
+      name="description"
+      content="Welcome to the Lagos Chamber of Commerce. Supporting business growth and community development."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lagos Chamber of Commerce" />
+    <meta
+      property="og:description"
+      content="Join the Lagos Chamber of Commerce to connect and grow your business."
+    />
+    <meta property="og:image" content="images/lagos.jpeg" />
+    <meta
+      property="og:url"
+      content="https://olufunmilayo01.github.io/wdd230/"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Lagos Chamber of Commerce</h1>
+      <nav>
+        <button class="hamburger">&#9776;</button>
+        <ul class="menuLinks">
+          <li><a href="#" title="Home" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="images/lagos.jpeg" alt="Lagos city skyline" />
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </section>
+
+      <section class="current-event">
+        <h2>Upcoming Events</h2>
+        <p>
+          Stay updated on the latest networking events and business
+          opportunities.
+        </p>
+      </section>
+
+      <section class="weather-card">
+        <h2>Weather Information</h2>
+        <p>Check the latest weather updates for Lagos.</p>
+      </section>
+
+      <section class="company-spotlights">
+        <h2>Business Spotlights</h2>
+        <p>Highlighting top businesses in Lagos.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> Lagos Chamber of Commerce |
+        🌺Oluwatobiloba Makinde🌺
+      </p>
+      <p>Last updated: <span id="lastModified"></span></p>
+      <script src="scripts/getDates.js"></script>
+    </footer>
+  </body>
+</html>

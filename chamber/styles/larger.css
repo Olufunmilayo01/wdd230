@@ -1,0 +1,23 @@
+@media screen and (min-width: 640px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+  .card:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  #hamburger {
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+}
