@@ -146,7 +146,10 @@ main h1 {
   justify-content: center;
   margin: 0 20%;
 }
-
+.counter {
+  justify-content: center;
+  margin: 0 20%;
+}
 h2 {
   background-color: darkcyan;
   text-align: center;
