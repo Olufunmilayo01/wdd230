@@ -38,7 +38,7 @@
     <header>
       <button id="darkModeButton">🌙</button>
       <img
-        src="images/Oluwatobi.jpeg"
+        src="images/Oluwatobi.webp"
         alt="Oluwatobiloba Makinde Profile"
         width="120"
         height="150"
@@ -55,8 +55,29 @@
       </ul>
     </nav>
     <main>
+      <div class="hero">
+        <picture>
+          <img
+            src="images/salt_lake_temple_large.webp"
+            loading="lazy"
+            width="900"
+            height="400"
+            alt="Salt Lake Temple"
+          />
+          <source
+            srcset="salt_lake_temple_large.webp"
+            media="(min-width: 960px)"
+          />
+          <source
+            srcset="salt_lake_temple_mobile.webp"
+            media="(max-width: 400px)"
+          />
+        </picture>
+        <span>My Favorite Temple</span>
+      </div>
+
       <h1>WDD 230: Web Frontend Development</h1>
-      <!-- <hr /> -->
+
       <div class="course">
         <section class="course-card">
           <h2>Learning Activities</h2>
@@ -74,13 +95,25 @@
       <div class="weather">
         <section class="card">
           <h2>Information</h2>
+
           <ul>
             <li>Weather</li>
-            <li>Number of visits</li>
+            <div class="counter">
+              Visit Count: <span id="visit-count">0</span>
+            </div>
           </ul>
         </section>
       </div>
     </main>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.6364798009!2d3.119146231591494!3d6.548028244501643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1738773437308!5m2!1sen!2sus"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
     <footer>
       <p>
         &copy; <span id="currentYear"></span> 🌺 Oluwatobiloba Makinde 🌺
