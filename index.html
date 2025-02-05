@@ -57,20 +57,21 @@
     <main>
       <div class="hero">
         <picture>
+          <source
+            srcset="images/salt_lake_temple_large.webp"
+            media="(min-width: 960px)"
+          />
+          <source
+            srcset="images/salt_lake_temple_mobile.webp"
+            media="(max-width: 400px)"
+          />
+
           <img
             src="images/salt_lake_temple_large.webp"
             loading="lazy"
             width="900"
             height="400"
             alt="Salt Lake Temple"
-          />
-          <source
-            srcset="salt_lake_temple_large.webp"
-            media="(min-width: 960px)"
-          />
-          <source
-            srcset="salt_lake_temple_mobile.webp"
-            media="(max-width: 400px)"
           />
         </picture>
         <span>My Favorite Temple</span>

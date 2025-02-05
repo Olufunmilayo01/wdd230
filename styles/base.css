@@ -89,20 +89,30 @@ main {
   margin: 2rem auto;
   padding: 0 1rem;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  /* grid-template-columns: 1fr; */
   gap: 2%;
   width: 100vw;
 }
 
 .hero {
   position: relative;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
 }
+
+.hero picture {
+  display: block;
+  width: 100%;
+}
+
 .hero img {
   width: 100%;
   height: auto;
   display: block;
   /* object-fit: cover; */
 }
+
 .hero span {
   position: absolute;
   top: 15%;
@@ -114,12 +124,6 @@ main {
   font-size: 1.5rem;
   font-style: oblique;
   border-radius: 4px;
-  /* transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  white-space: nowrap; */
 }
 
 main h1 {
@@ -165,10 +169,6 @@ section ul li a {
   text-decoration: none;
   color: black;
 }
-
-/* section ul li a:hover {
-  text-decoration: underline;
-} */
 
 footer {
   text-align: center;
