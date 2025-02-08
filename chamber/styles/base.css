@@ -213,7 +213,7 @@ footer {
     display: flex; /* Show menu when open */
   }
 
-  .gallery {
+  .image-container {
     grid-template-columns: 1fr; /*1 image per row*/
   }
   .gallery img {
