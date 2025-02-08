@@ -21,7 +21,16 @@
     display: none;
   }
 
-  .hero span {
-    font-size: 2rem;
+  .discover-layout {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .image-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
 }

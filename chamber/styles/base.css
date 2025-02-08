@@ -96,6 +96,82 @@ h2 {
   color: #1b4965;
 }
 
+.discover-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.gallery h2 {
+  text-align: center;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* .gallery {
+  text-align: center;
+} */
+
+/* .image-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+} */
+
+figcaption {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+iframe {
+  width: 95%;
+  height: 250px;
+  border: 2px solid #1b4965;
+  border-radius: 8px;
+  background: white;
+  padding: 10px;
+  text-align: center;
+}
+
 /* Footer Styles */
 footer {
   background-color: #1b4965;
@@ -135,5 +211,18 @@ footer {
 
   .menuLinks.open {
     display: flex; /* Show menu when open */
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; /*1 image per row*/
+  }
+  .gallery img {
+    width: 100%;
+    height: auto; /* Ensure images display fully in mobile view */
+    object-fit: contain; /* Keep full image visible */
+  }
+
+  iframe {
+    height: 200px;
   }
 }

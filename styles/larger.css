@@ -12,6 +12,10 @@
     grid-column: span 2;
   }
 
+  .hero span {
+    font-size: 2rem;
+  }
+
   /* #myButton {
     font-size: 28px;
     background: none;

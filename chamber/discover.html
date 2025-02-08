@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lagos Chamber of Commerce</title>
+    <meta name="author" content="Oluwatobiloba Makinde" />
+    <meta
+      name="description"
+      content="Welcome to the Lagos Chamber of Commerce. Supporting business growth and community development."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lagos Chamber of Commerce" />
+    <meta
+      property="og:description"
+      content="Join the Lagos Chamber of Commerce to connect and grow your business."
+    />
+    <meta property="og:image" content="images/lagos.jpeg" />
+    <meta
+      property="og:url"
+      content="https://olufunmilayo01.github.io/wdd230/"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Lagos Chamber of Commerce</h1>
+      <nav>
+        <button class="hamburger">&#9776;</button>
+        <ul class="menuLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html" class="active">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="discover-layout">
+      <aside class="sidebar">
+        <section id="visit-message">
+          <h2>Welcome to Lagos</h2>
+          <p id="visitMessage"></p>
+          <h3>City Statistics</h3>
+          <ul>
+            <li>Population: 15.4 million</li>
+            <li>Major Industries: Finance, Trade, Technology</li>
+            <li>
+              Tourist Attractions: Lekki Conservation Centre, National Museum
+            </li>
+          </ul>
+        </section>
+
+        <section id="calendar">
+          <h2>Event Calendar</h2>
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=en.nigerian%23holiday%40group.v.calendar.google.com&ctz=Africa%2FLagos"
+          ></iframe>
+        </section>
+      </aside>
+
+      <section class="gallery">
+        <h2>Explore Lagos</h2>
+        <div class="image-container">
+          <figure>
+            <img
+              src="placeholder.jpg"
+              data-src="images/lagos1.webp"
+              alt="Lagos city view"
+              class="lazy-load"
+            />
+            <figcaption>Lagos City Skyline</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="placeholder.jpg"
+              data-src="images/lagos2.webp"
+              alt="Lekki Conservation Centre"
+              class="lazy-load"
+            />
+            <figcaption>Lekki Conservation Centre</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="placeholder.jpg"
+              data-src="images/lagos3.webp"
+              alt="Lagos nightlife"
+              class="lazy-load"
+            />
+            <figcaption>Lagos Nightlife</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="placeholder.jpg"
+              data-src="images/lagos4.webp"
+              alt="Eko Atlantic"
+              class="lazy-load"
+            />
+            <figcaption>Eko Atlantic City</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="placeholder.jpg"
+              data-src="images/lagos5.webp"
+              alt="Lagos market"
+              class="lazy-load"
+            />
+            <figcaption>Lagos Market Scene</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="placeholder.jpg"
+              data-src="images/lagos6.webp"
+              alt="Lagos beach"
+              class="lazy-load"
+            />
+            <figcaption>Lagos Beach</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> Lagos Chamber of Commerce | WDD
+        230 🌺Oluwatobiloba Makinde🌺
+      </p>
+      <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <!-- <script src="scripts/visitTracker.js"></script> -->
+  </body>
+</html>
