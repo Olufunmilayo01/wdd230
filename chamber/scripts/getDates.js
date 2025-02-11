@@ -25,24 +25,6 @@ hamburgerElement.addEventListener("click", () => {
   }
 });
 
-// // Lazy Loading Images
-// document.addEventListener("DOMContentLoaded", function () {
-//   const lazyImages = document.querySelectorAll(".lazy-load");
-//   const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//       if (entry.isIntersecting) {
-//         const img = entry.target;
-//         img.src = img.getAttribute("data-src");
-//         img.classList.remove("lazy-load");
-//         observer.unobserve(img);
-//       }
-//     });
-//   });
-//   lazyImages.forEach((img) => observer.observe(img));
-// });
-
-// Lazy Loading for Mobile Only
-
 document.addEventListener("DOMContentLoaded", function () {
   const lazyImages = document.querySelectorAll(".lazy-load");
 
@@ -94,3 +76,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   localStorage.setItem("lastVisit", now);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  let now = new Date();
+  let formattedTimestamp = now.toISOString(); // Formats to "YYYY-MM-DDTHH:MM:SS.sssZ"
+  document.getElementById("timestamp").value = formattedTimestamp;
+});
+
+// Function to extract URL parameters
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+// Get the timestamp from the URL
+const timestamp = getQueryParam("timestamp");
+
+// Display it if available
+if (timestamp) {
+  document.getElementById("timestampDisplay").textContent =
+    "Join Date: " + new Date(timestamp).toLocaleString();
+}
