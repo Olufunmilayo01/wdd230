@@ -1,0 +1,136 @@
+:root {
+  --primary-color: darkcyan;
+  --secondary-color: #f8f9fa;
+  --accent-color: #efac3e;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+header span {
+  font-size: 2rem;
+  color: black;
+  font-weight: 700;
+  align-content: center;
+}
+
+main {
+  width: 50%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+button {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d18f2b;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+#darkModeButton {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: white;
+}
+
+#darkModeButton:hover {
+  background-color: #444;
+}
+
+nav {
+  background-color: rgb(70, 71, 72);
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#myButton {
+  font-size: 2rem;
+  background-color: rgb(70, 71, 72);
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  padding: 0 2vw;
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  /* gap: 1rem; */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.active {
+  color: yellow;
+  font-weight: bold;
+}

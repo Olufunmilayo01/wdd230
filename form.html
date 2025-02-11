@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <button id="darkModeButton">🌙</button>
+      <img
+        src="images/Oluwatobi.webp"
+        alt="Oluwatobiloba Makinde Profile"
+        width="120"
+        height="150"
+      />
+      <span>Oluwatobiloba Makinde</span>
+    </header>
+    <nav>
+      <button id="myButton">&#9776;</button>
+      <ul class="menuLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chamber/index.html">Chamber</a></li>
+        <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+        <li><a href="form.html" class="active">Form</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form action="record.html" method="get">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          pattern="[A-Za-z0-9]{8,}"
+        />
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+        />
+        <p id="passwordError" class="error-message"></p>
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+          title="Please enter a valid email address"
+        />
+
+        <label for="rating">Page Rating: <span id="ratingValue">5</span></label>
+        <input
+          type="range"
+          id="rating"
+          name="rating"
+          min="1"
+          max="10"
+          step="1"
+          value="5"
+        />
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> 🌺 Oluwatobiloba Makinde 🌺
+        Nigeria
+      </p>
+      <p id="lastModified"></p>
+      <p>
+        My Codepen:
+        <a
+          href="https://codepen.io/Oluwatobiloba-Makinde/pen/vEYBMLM"
+          target="_blank"
+        >
+          View on CodePen
+        </a>
+      </p>
+      <script src="scripts/form.js"></script>
+    </footer>
+  </body>
+</html>
