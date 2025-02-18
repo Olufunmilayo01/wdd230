@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Tech Solutions Ltd",
+    "address": "123 Innovation Road, Lagos, Nigeria",
+    "phone": "+234 801 234 5678",
+    "website": "https://techsolutions.com",
+    "image": "TechCabal.jpeg",
+    "membership": "Gold",
+    "description": "Leading provider of IT solutions in Africa."
+  },
+  {
+    "name": "Zylus Group International",
+    "address": "4A Omon Ebhomenye Street, Off Admiralty Way, Lekki Phase 1, Lagos, Nigeria",
+    "phone": "+234 7034100972",
+    "website": "https://zylusgroup.com/",
+    "image": "Zylus Group.jpeg",
+    "membership": "Bronze",
+    "description": "Reliable and efficient real estate company."
+  },
+  {
+    "name": "AgroBest Farms",
+    "address": "654 Greenway Drive, Ibadan, Nigeria",
+    "phone": "+234 805 678 9012",
+    "website": "https://agrobest.com",
+    "image": "Greenhas Group.jpeg",
+    "membership": "Silver",
+    "description": "Organic farming and agricultural product distribution."
+  },
+  {
+    "name": "CBC Towers",
+    "address": "Olubunmi Owa St, Lekki Phase 1, Lekki 106104, Lagos, Nigeria",
+    "phone": "+234 806 789 0123",
+    "website": "https://cbcemea.com/",
+    "image": "cbc towers.jpeg",
+    "membership": "Gold",
+    "description": "Helping brands to move to the next level."
+  },
+  {
+    "name": "Flutter Wave",
+    "address": "19, Olubunmi Rotimi Street, Lekki Phase One, Lagos, Nigeria",
+    "phone": "0201 888 9595",
+    "website": "https://flutterwave.com/ng/",
+    "image": "flutter wave.jpeg",
+    "membership": "Platinum",
+    "description": "Leading payments technology company that enables businesses across the world."
+  },
+  {
+    "name": "Great Brands Nigeria Limited",
+    "address": "Ojomu Royal Plaza, Km.23, Lekki-Epe Expressway, Ikota 1st Gate, Ikota Village,Lagos,Nigeria",
+    "phone": "+234 807 890 1234",
+    "website": "www.greatbrandsng.com",
+    "image": "great brands.jpeg",
+    "membership": "Platinum",
+    "description": "Exclusive distributor for British American Tobacco Nigeria."
+  },
+  {
+    "name": "Fouani Store",
+    "address": "KM25, Lekki-Epe Expressway, Ajiwe, Before Abraham Adesanya Roundabout, Ajah,Lagos, Nigeria",
+    "phone": "+234814 604 9223",
+    "website": "https://fouanistore.com/ng",
+    "image": "Fouani store.jpeg",
+    "membership": "Silver",
+    "description": "Premium home appliances brands in Nigeria"
+  }
+]

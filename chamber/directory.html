@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lagos Chamber of Commerce</title>
+    <meta name="author" content="Oluwatobiloba Makinde" />
+    <meta
+      name="description"
+      content="Welcome to the Lagos Chamber of Commerce. Supporting business growth and community development."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lagos Chamber of Commerce" />
+    <meta
+      property="og:description"
+      content="Join the Lagos Chamber of Commerce to connect and grow your business."
+    />
+    <meta property="og:image" content="images/lagos.jpeg" />
+    <meta
+      property="og:url"
+      content="https://olufunmilayo01.github.io/wdd230/"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Lagos Chamber of Commerce</h1>
+      <nav>
+        <button class="hamburger">&#9776;</button>
+        <ul class="menuLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html" class="actve">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="toggle-buttons">
+        <button id="grid-view">Grid View</button>
+        <button id="list-view">List View</button>
+      </div>
+      <div id="members-container" class="grid"></div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> Lagos Chamber of Commerce | WDD
+        230 🌺Oluwatobiloba Makinde🌺
+      </p>
+      <p>Last updated: <span id="lastModified"></span></p>
+      <script src="scripts/getDates.js"></script>
+      <script src="scripts/directory.js" defer></script>
+    </footer>
+  </body>
+</html>
