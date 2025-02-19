@@ -1,4 +1,5 @@
-[
+{
+  "members": [
   {
     "name": "Tech Solutions Ltd",
     "address": "123 Innovation Road, Lagos, Nigeria",
@@ -63,3 +64,4 @@
     "description": "Premium home appliances brands in Nigeria"
   }
 ]
+}

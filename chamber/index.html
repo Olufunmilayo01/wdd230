@@ -32,8 +32,6 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="icon" href="favicon.ico" />
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/members.js"></script>
   </head>
   <body>
     <header>
@@ -68,7 +66,16 @@
       <section class="weather-card">
         <h2>Weather Information</h2>
         <p>Check the latest weather updates for Lagos.</p>
-        <div id="forecast"></div>
+        <div id="current-weather">
+          <img id="weather-icon" src="" alt="Weather icon" />
+          <div>
+            <p id="temperature"></p>
+            <p id="description"></p>
+          </div>
+        </div>
+
+        <h3>3-Day Forecast</h3>
+        <div id="forecast" class="forecast-container"></div>
       </section>
 
       <section class="company-spotlights">
@@ -89,6 +96,8 @@
         230 🌺Oluwatobiloba Makinde🌺
       </p>
       <p>Last updated: <span id="lastModified"></span></p>
+      <script src="scripts/weather.js"></script>
+      <script src="scripts/members.js"></script>
       <script src="scripts/getDates.js"></script>
       <script src="scripts/banner.js"></script>
     </footer>
