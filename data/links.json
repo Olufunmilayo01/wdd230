@@ -1,39 +1,39 @@
 {
-    "weeks": [
-      {
-        "week": "Week 1",
-        "links": [
-          { "url": "week01/holygrail.html", "title": "HG Layout" },
-          { "url": "week01/media-query.html", "title": "mQueries" }
-        ]
-      },
-      {
-        "week": "Week 2",
-        "links": [
-          { "url": "week02/flexbox.html", "title": "Flexbox" },
-          { "url": "week02/grid.html", "title": "CSS Grid" }
-        ]
-      },
-      {
-        "week": "Week 3",
-        "links": [
-          { "url": "week03/WebP.html", "title": "WebP" },
-          { "url": "week03/lazy.html", "title": "lazy loading" }
-        ]
-      },
-      {
-        "week": "Week 4",
-        "links": [
-          { "url": "week04/tablebuild.html", "title": "tablebuild" },
-          { "url": "week04/.html", "title": "CSS Grid" }
-        ]
-      },
-      {
-        "week": "Week 5",
-        "links": [
-          { "url": "week05/prophets.html", "title": "prophets" },
-          { "url": "week05/weather.html", "title": "weather" }
-        ]
-      }
-    ]
-  }
+  "weeks": [
+    {
+      "week": "Week 1",
+      "links": [
+        { "url": "week01/holygrail.html", "title": "HG Layout" },
+        { "url": "week01/media-query.html", "title": "mQueries" }
+      ]
+    },
+    {
+      "week": "Week 2",
+      "links": [
+        { "url": "week02/flexbox.html", "title": "Flexbox" },
+        { "url": "week02/grid.html", "title": "CSS Grid" }
+      ]
+    },
+    {
+      "week": "Week 3",
+      "links": [
+        { "url": "week03/WebP.html", "title": "WebP" },
+        { "url": "week03/lazy.html", "title": "lazy loading" }
+      ]
+    },
+    {
+      "week": "Week 4",
+      "links": [
+        { "url": "week04/tablebuild.html", "title": "Tablebuild" },
+        { "url": "week04/.html", "title": "CSS Grid" }
+      ]
+    },
+    {
+      "week": "Week 5",
+      "links": [
+        { "url": "week05/prophets.html", "title": "Prophets" },
+        { "url": "week05/weather.html", "title": "Weather" }
+      ]
+    }
+  ]
+}

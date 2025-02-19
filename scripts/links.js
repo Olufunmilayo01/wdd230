@@ -16,22 +16,16 @@ function displayLinks(weeks) {
   activityList.innerHTML = ""; // Clear existing content
 
   weeks.forEach((week) => {
-    let weekItem = document.createElement("h3");
-    weekItem.textContent = week.week;
-    activityList.appendChild(weekItem);
+    let weekLine = document.createElement("p"); // Create a paragraph for each week
+    weekLine.innerHTML = `<strong>${week.week}:</strong> `;
 
-    let linkList = document.createElement("ul");
+    let linkTexts = week.links.map(
+      (link) =>
+        `<a href="${baseURL + link.url}" target="_blank">${link.title}</a>`
+    );
 
-    week.links.forEach((link) => {
-      let listItem = document.createElement("li");
-      let anchor = document.createElement("a");
-      anchor.href = baseURL + link.url;
-      anchor.textContent = link.title;
-      listItem.appendChild(anchor);
-      linkList.appendChild(listItem);
-    });
-
-    activityList.appendChild(linkList);
+    weekLine.innerHTML += linkTexts.join(" | "); // Join links with a separator
+    activityList.appendChild(weekLine);
   });
 }
 

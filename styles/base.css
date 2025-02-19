@@ -170,6 +170,21 @@ section ul li a {
   color: black;
 }
 
+#activity-links {
+  font-size: 1rem;
+  padding: 10px;
+}
+
+#activity-links a {
+  text-decoration: none;
+  color: #215ea0;
+  font-weight: bold;
+}
+
+#activity-links a:hover {
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   padding: 1.5rem 0;

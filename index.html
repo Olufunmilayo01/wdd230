@@ -82,6 +82,7 @@
       <div class="course">
         <section class="course-card">
           <h2>Learning Activities</h2>
+          <div id="activity-links">
           <ul>
             <li><a href="#">Week 01:</a></li>
             <li><a href="#">Week 02:</a></li>
@@ -90,6 +91,7 @@
             <li><a href="#">Week 05:</a></li>
             <li><a href="#">Week 06:</a></li>
           </ul>
+        </div>
         </section>
       </div>
 
@@ -98,12 +100,10 @@
           <h2>Information</h2>
 
           <ul>
-              <li>Temperature: <span id="temperature">--°C</span></li>
-              <li>Condition: <span id="description">--</span></li>
-            </ul>
-              <img id="weather-icon" src="./images/sunny.png" alt="Weather Icon">
-            </section>
-            
+            <li>Temperature: <span id="temperature">--°C</span></li>
+            <li>Condition: <span id="description">--</span></li>
+          </ul>
+          <img id="weather-icon" src="./images/sunny.png" alt="Weather Icon" />
 
           <div class="counter">
             Visit Count: <span id="visit-count">0</span>
@@ -135,9 +135,9 @@
           View on CodePen
         </a>
       </p>
-      <script src="scripts/getDates.js"></script>
-
+      <script src="scripts/weather.js"></script>
       <script src="scripts/links.js"></script>
+      <script src="scripts/getDates.js"></script>
     </footer>
   </body>
 </html>
