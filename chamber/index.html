@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="icon" href="favicon.ico" />
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/members.js"></script>
   </head>
   <body>
     <header>
@@ -66,12 +68,19 @@
       <section class="weather-card">
         <h2>Weather Information</h2>
         <p>Check the latest weather updates for Lagos.</p>
+        <div id="forecast"></div>
       </section>
 
       <section class="company-spotlights">
         <h2>Business Spotlights</h2>
         <p>Highlighting top businesses in Lagos.</p>
+        <div id="spotlights"></div>
       </section>
+
+      <div id="meet-greet-banner" class="banner">
+        <p>Join us for the Chamber Meet & Greet on **Wednesday at 7:00 PM**!</p>
+        <button id="close-banner">❌</button>
+      </div>
     </main>
 
     <footer>
@@ -81,6 +90,7 @@
       </p>
       <p>Last updated: <span id="lastModified"></span></p>
       <script src="scripts/getDates.js"></script>
+      <script src="scripts/banner.js"></script>
     </footer>
   </body>
 </html>
