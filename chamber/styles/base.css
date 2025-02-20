@@ -17,6 +17,10 @@ header {
   text-align: center;
 }
 
+h1 {
+  color: #003366;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -241,14 +245,14 @@ footer {
   font-size: 16px;
   cursor: pointer;
   border: none;
-  background-color: #789fb7;
+  background-color: #0056b3;
   color: white;
   border-radius: 5px;
   transition: background 0.3s;
 }
 
 .view-toggle button:hover {
-  background-color: #1b4965;
+  background-color: #003f7f;
 }
 
 .view-toggle button.active {
