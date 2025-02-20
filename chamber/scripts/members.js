@@ -22,5 +22,5 @@ async function loadSpotlights() {
     console.error("Error loading spotlights:", error);
   }
 }
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 document.addEventListener("DOMContentLoaded", loadSpotlights);

@@ -226,11 +226,14 @@ footer {
 
 /* === VIEW TOGGLE BUTTONS === */
 .view-toggle {
-  display: flex;
-  /* flex-direction: row; */
+  display: block;
+  /* flex-direction: column; */
   justify-content: center;
+  align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .view-toggle button {
@@ -238,18 +241,18 @@ footer {
   font-size: 16px;
   cursor: pointer;
   border: none;
-  background-color: #007bff;
+  background-color: #789fb7;
   color: white;
   border-radius: 5px;
   transition: background 0.3s;
 }
 
 .view-toggle button:hover {
-  background-color: #0056b3;
+  background-color: #1b4965;
 }
 
 .view-toggle button.active {
-  background-color: #0056b3;
+  color: #f2f62a;
   font-weight: bold;
 }
 
@@ -257,13 +260,14 @@ footer {
 #members-container.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 50px;
   justify-content: center;
-  justify-content: space-evenly;
+  align-items: stretch;
   padding: 2rem;
   max-width: 1200px;
-  margin: 5rem 5rem;
-  margin-right: 10rem;
+  margin: 5rem 3rem;
+  /* margin-right: 10rem; */
+  min-height: 350px;
 }
 
 /* === LIST VIEW === */
@@ -272,18 +276,18 @@ footer {
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   margin: 2rem 10rem;
   margin-right: 35rem;
 }
 
-.list-view section {
+/* .list-view section {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   width: 70%;
   padding-left: 1rem;
   padding-right: 1rem;
-}
+} */
 
 /* === MEMBER CARD (Default) === */
 .member {
@@ -294,7 +298,18 @@ footer {
   text-align: center;
   width: 100%;
   max-width: 300px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Ensure uniform height */
+}
+
+.member img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Prevents image distortion */
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 /* === LIST VIEW - HORIZONTAL LAYOUT === */
@@ -304,11 +319,11 @@ footer {
   align-items: center;
   justify-content: space-between; /* Space between info and membership */
   text-align: left;
-  padding: 15px;
+  padding: 5px 15px;
   width: 200%;
+  height: fit-content;
   max-width: 800px;
   border: none;
-  /* border-bottom: 1px solid #ccc; */
   margin: 0.5rem;
 }
 
@@ -316,7 +331,7 @@ footer {
 #members-container.list .member img {
   display: none;
   width: 50px;
-  height: 50px;
+  /* height: 50px; */
   margin-right: 15px;
   border-radius: 5px;
 }
